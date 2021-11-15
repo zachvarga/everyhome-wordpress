@@ -1,0 +1,86 @@
+/* ---- BB Form Modification ---- */
+
+/* - Lables - */
+/* Hide Lables */
+ #bboxdonation_gift_lblGivingLevels {
+  display: none;
+}
+/* Raise the sections after hiding some lables */
+/*#bboxdonation_gift_fldAmountWithLevels {
+  margin-top: -30px;
+} */
+/* Form label typography */
+#bboxdonation_gift_lblHeadingDonation,
+#bboxdonation_designation_lblHeadingDesignation,
+#bboxdonation_billing_lblHeadingContact {
+  font-weight: bold !important;
+  font-size: 20px !important;
+  color: #333333;
+}
+
+/* - Giving Radio Button Section - */
+/* Secure Payment btn green */
+.BBFormSubmitbutton, #bboxdonation_btnSecurePayment {
+  background-color: #46be83;
+}
+/* Giving btn radio section full width */
+#bboxdonation_gift_rdlstGivingLevels {
+  width: 100% !important;
+}
+/* Tighten-up giving radio btns */
+.BBFormWideButtonGivingLevels .BBFormRadioLabelGivingLevel {
+  padding: 8px !important;
+}
+/* Giving btn radio typography */
+.BBFormRadioDescription,
+.BBFormRadioDescriptionOther,
+.BBFormRadioAmount {
+  font-size: 18px !important;
+}
+/* Make other vertically aligned */
+.BBFormFieldContainerGivingLevels span:first-child {
+  float: none !important;
+}
+
+/* - Form text field changes - */
+/* Text boxes full width */
+.BBFormTextbox {
+  max-width: 100% !important;
+}
+/* Reduce padding on all input fields */
+input {
+  padding: 3px 0 !important;
+}
+/* half-width text field fix */
+#bboxdonation_billing_txtFirstName,
+#bboxdonation_billing_txtLastName {
+  width: 45%;
+}
+/* Address field height */
+#bboxdonation_billing_billingAddress_txtAddress {
+    height: 35px;
+}
+/* Form label typography */
+.BBFormFieldLabel {
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
+/* -- General Feel -- */
+/* Reduce spacing and indent section headings */
+.BBFormSectionHeading {
+  padding: 5px 0 5px 12px !important;
+  margin: 2px !important;
+}
+.BBFormContainer {
+  padding: 0 !important;
+}
+/* Select Fields text size */
+.BBFormSelectList,
+.BBFormTextbox {
+  font-size: 16px !important;
+}
+.BBFormTextbox {
+  padding-left: 4px !important;
+}
+/* ---- END BB Form Modification ---- */
