@@ -1,19 +1,3 @@
-<!-- This is a consolidation of all head scripts from several places across our WordPress site... The origin page url will be included in case we need to revert back. -->
-
-<!---------- "Salient Custom JS Code (Head)" ---------->
-<!-- https://everyhome.org/wp-admin/admin.php?page=Salient&tab=1 -->
-
-<!-- Global site tag (gtag.js) - Google Analytics    (CONNECTED TO OUR UA TAG. DON'T NEED THIS ONE)
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M02QTHJEW5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-gtag('config', 'G-M02QTHJEW5');
-</script>
--->
-
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-191772906-1"></script>
 <script>
@@ -24,11 +8,17 @@ gtag('config', 'G-M02QTHJEW5');
   gtag('config', 'UA-191772906-1');
 </script>
 
-<!-- Event snippet for Page view conversion page -->
+<!-- Add this after the opening body tag to avoid conflict with Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Ads: 1030583127 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1030583127"></script>
 <script>
-  gtag('event', 'conversion', {'send_to': 'AW-1030583127/DefPCMy1ufkBENfmtesD'});
-</script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'AW-1030583127');
+</script>
+<!-- End Google -->
 
 <!-- Pinterest Tag -->
 <script>
@@ -45,14 +35,7 @@ pintrk('page');
 <img height="1" width="1" style="display:none;" alt=""
   src="https://ct.pinterest.com/v3/?event=init&tid=2614367757032&pd[em]=<hashed_email_address>&noscript=1" />
 </noscript>
-<!-- end Pinterest Tag -->
-
-<!---------- END "Salient Custom JS Code (Head)" ---------->
-
-
-
-<!---------- "Header and Footer Scripts" ---------->
-<!-- https://everyhome.org/wp-admin/options-general.php?page=header-and-footer-scripts%2Fshfs.php -->
+<!-- End Pinterest Tag -->
 
 <!-- Cookies -->
 <script>
@@ -105,37 +88,7 @@ src="https://www.facebook.com/tr?id=4645897025462088&ev=PageView&noscript=1"
 <meta name="facebook-domain-verification" content="wqvyf5yir8x9agruptzxtum3u3qtv5" />
 <meta name="facebook-domain-verification" content="udinrtqoue7jj5d0eijz8a7bxlz377" />
 
-<!---------- END "Header and Footer Scripts" ---------->
-
-
-
-
-<!---------- "Insert Headers and Footers" ---------->
-<!-- https://everyhome.org/wp-admin/options-general.php?page=insert-headers-and-footers -->
-
-<!-- THESE TAGS HAVE BEEN COMMENTED BECAUSE THEY ARE REDUNDANT WITHIN THE CONSOLIDATED FILES
-
-Global site tag (gtag.js) - Google Analytics
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-191772906-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-191772906-1');
-</script>
-
-Global site tag (gtag.js) - Google Analytics
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M02QTHJEW5">
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'AW-1030583127');
-</script>
--->
-<!--  Clickcease.com tracking-->
+<!-- Clickcease.com Tracking -->
 <script type='text/javascript'>var script = document.createElement('script');
   script.async = true; script.type = 'text/javascript';
   var target = 'https://www.clickcease.com/monitor/stat.js';
@@ -144,7 +97,25 @@ Global site tag (gtag.js) - Google Analytics
 <noscript>
   <a href='https://www.clickcease.com' rel='nofollow'><img src='https://monitor.clickcease.com/stats/stats.aspx' alt='ClickCease'/></a>
 </noscript>
-      <!--  Clickcease.com tracking-->
+<!-- Clickcease.com Tracking -->
 
-
-<!---------- END "Insert Headers and Footers" ---------->
+<!-- Microsoft Conversion Tracking -->
+<script>
+  (function(w,d,t,r,u)
+  {
+    var f,n,i;
+    w[u]=w[u]||[],f=function()
+    {
+      var o={ti:" 25149790"};
+      o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")
+    },
+    n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function()
+    {
+      var s=this.readyState;
+      s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)
+    },
+    i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)
+  })
+  (window,document,"script","//bat.bing.com/bat.js","uetq");
+</script>
+<!-- End Microsoft Conversion Tracking -->
